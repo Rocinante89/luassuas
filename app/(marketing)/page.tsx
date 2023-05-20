@@ -45,7 +45,7 @@ export default async function IndexPage() {
             What is F1 in schools?
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            F1 is an international STEM (science, technology, engineering, mathematics) competition for school children aged 9-19, in which students have to design and manufacture a miniature "car" out of the official F1 Model Block, using CAD/CAM design tools. F1 in Schools Ltd is a social enterprise working with committed industry partners to provide an exciting, yet challenging educational experience, through the magnetic appeal of Formula 1. It is an educational programme that raises awareness of STEM and Formula 1 among students worldwide. This competition looks at the overall performance of teams, simultaneously promoting STEM and inculcating entrepreneurship skills in the students
+            F1 is an international STEM (science, technology, engineering, mathematics) competition for school children aged 9-19, in which students have to design and manufacture a miniature &quot;car&quot; out of the official F1 Model Block, using CAD/CAM design tools. F1 in Schools Ltd is a social enterprise working with committed industry partners to provide an exciting, yet challenging educational experience, through the magnetic appeal of Formula 1. It is an educational programme that raises awareness of STEM and Formula 1 among students worldwide. This competition looks at the overall performance of teams, simultaneously promoting STEM and inculcating entrepreneurship skills in the students
           </p>
         </div>
       </section>
