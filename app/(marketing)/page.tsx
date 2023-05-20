@@ -23,7 +23,7 @@ export default async function IndexPage() {
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
             TBA
           </p>
-          <div className="space-x-4">
+          <div className="flex flex-wrap gap-2">
             <Link href="/the-team" className={cn(buttonVariants({ size: "lg" }))}>
               Get to know the team
             </Link>
