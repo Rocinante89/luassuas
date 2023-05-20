@@ -21,9 +21,9 @@ export default async function IndexPage() {
             Luas Suas Racing
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            TBA
+            Lorettos first ever F1 schools team
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             <Link href="/the-team" className={cn(buttonVariants({ size: "lg" }))}>
               Get to know the team
             </Link>
