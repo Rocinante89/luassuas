@@ -3,7 +3,7 @@ import { SiteConfig } from "types"
 export const siteConfig: SiteConfig = {
   name: "Luas Suas Racing",
   description:
-    "An open source application built using the new router, server components and everything new in Next.js 13.",
+    "Kilkenny based racing team competing in the F1 in schools.",
   url: "https://luassuasracing.com",
   ogImage: "https://luassuasracing.com/og.jpg",
   links: {
