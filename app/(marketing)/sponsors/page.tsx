@@ -1,8 +1,4 @@
-import Link from "next/link"
 
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
 
 export const metadata = {
   title: "Sponsors",
@@ -13,13 +9,13 @@ export default function SponsorsPage() {
     <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
       <div className="mx-auto flex w-full flex-col gap-4 md:max-w-[58rem]">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Simple, transparent pricing
+          Sponsors and why we need them
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          Unlock all features including unlimited posts for your blog.
+        Sponsors play a vital role in the competition as all of the costs of building the car and our brand all add up to be quite expensive. We offer a high ROI (return on investment) to ensure our sponsors receive the best return for the money they invest. This includes promotion on our social media platforms, being displayed on our pit display at the national finals, being displayed on our car and much more.
         </p>
       </div>
-      <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
+      {/* <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
         <div className="grid gap-6">
           <h3 className="text-xl font-bold sm:text-2xl">
             What&apos;s included in the PRO plan
@@ -63,7 +59,7 @@ export default function SponsorsPage() {
           Taxonomy is a demo app.{" "}
           <strong>You can test the upgrade and won&apos;t be charged.</strong>
         </p>
-      </div>
+      </div> */}
     </section>
   )
 }
