@@ -5,10 +5,10 @@ import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 
 export const metadata = {
-  title: "Pricing",
+  title: "The Team",
 }
 
-export default function PricingPage() {
+export default function TeamPage() {
   return (
     <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
       <div className="mx-auto flex w-full flex-col gap-4 md:max-w-[58rem]">
