@@ -1,8 +1,59 @@
+import Image from 'next/image';
 
 
 export const metadata = {
   title: "Sponsors",
 }
+
+interface Sponsor {
+  name: string;
+  image: string;
+  tier: 'gold' | 'silver' | 'bronze' | 'special'
+}
+
+const sponsors: Sponsor[] = [
+  {
+    tier: 'special',
+    name: 'Lister Machine Tools',
+    image: '/images/Lister_Machine_Tools.png'
+  }, 
+  {
+    tier: 'gold',
+    name: 'Kiltorcan Raceway',
+    image: '/images/Kiltorcan_Raceway.png'
+
+  },
+  {
+    tier: 'gold',
+    name: 'Fran Grincell Properties',
+    image: '/images/Pauls_Kilkenny.png'
+
+  },
+  {
+    tier: 'gold',
+    name: 'Dalata Hotel Group',
+    image: '/images/Dalata_Hotel_Group.png'
+
+  },
+  {
+    tier: 'gold',
+    name: 'Goods Kilkenny',
+    image: '/images/Goods_Logo.png'
+
+  },
+  {
+    tier: 'bronze',
+    name: 'Pauls Kilkenny',
+    image: '/images/Pauls_Kilkenny.png'
+
+  },
+  {
+    tier: 'bronze',
+    name: 'Michael Lyng Motors',
+    image: '/images/Michael_Lyng_Motors.png'
+
+  },
+];
 
 export default function SponsorsPage() {
   return (
@@ -15,51 +66,25 @@ export default function SponsorsPage() {
         Sponsors play a vital role in the competition as all of the costs of building the car and our brand all add up to be quite expensive. We offer a high ROI (return on investment) to ensure our sponsors receive the best return for the money they invest. This includes promotion on our social media platforms, being displayed on our pit display at the national finals, being displayed on our car and much more.
         </p>
       </div>
-      {/* <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
-        <div className="grid gap-6">
-          <h3 className="text-xl font-bold sm:text-2xl">
-            What&apos;s included in the PRO plan
-          </h3>
-          <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
-            <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Unlimited Posts
-            </li>
-            <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Unlimited Users
-            </li>
-
-            <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Custom domain
-            </li>
-            <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Dashboard Analytics
-            </li>
-            <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Access to Discord
-            </li>
-            <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Premium Support
-            </li>
-          </ul>
-        </div>
-        <div className="flex flex-col gap-4 text-center">
-          <div>
-            <h4 className="text-7xl font-bold">$19</h4>
-            <p className="text-sm font-medium text-muted-foreground">
-              Billed Monthly
-            </p>
-          </div>
-          <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
-            Get Started
-          </Link>
+      <div className='flex justify-center gap-3'>
+        {sponsors.filter(sponsor => sponsor.tier === 'special').map(sponsor => <div className='flex items-center gap-2'>
+          <Image alt={sponsor.name} src={sponsor.image} height={248} width={248}/>
+          </div>)}
+      </div>
+      <div className='flex flex-col justify-start gap-3 rounded-2xl bg-gradient-to-r from-yellow-600 to-yellow-300 p-8  shadow-md transition duration-300 delay-150 ease-in-out hover:-translate-y-1  hover:scale-110 hover:bg-gradient-to-l hover:shadow-xl'>
+        <div className='flex justify-between gap-1'>
+        {sponsors.filter(sponsor => sponsor.tier === 'gold').map(sponsor => <div className='flex items-center justify-start gap-2'>
+          <Image alt={sponsor.name} src={sponsor.image} height={124} width={124}/>
+          </div>)}
         </div>
       </div>
-      <div className="mx-auto flex w-full max-w-[58rem] flex-col gap-4">
-        <p className="max-w-[85%] leading-normal text-muted-foreground sm:leading-7">
-          Taxonomy is a demo app.{" "}
-          <strong>You can test the upgrade and won&apos;t be charged.</strong>
-        </p>
-      </div> */}
+      <div className='flex flex-col justify-start gap-3 rounded-2xl bg-gradient-to-r from-yellow-800 to-yellow-600 p-8 shadow-md transition duration-300 delay-150 ease-in-out hover:-translate-y-1  hover:scale-110 hover:bg-gradient-to-l hover:shadow-xl'>
+          <div className='flex justify-between gap-1'>
+          {sponsors.filter(sponsor => sponsor.tier === 'bronze').map(sponsor => <div className='flex items-center justify-start gap-2'>
+          <Image alt={sponsor.name} src={sponsor.image} height={124} width={124}/>
+          </div>)}
+        </div>
+      </div>
     </section>
   )
 }
