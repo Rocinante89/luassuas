@@ -8,7 +8,7 @@ export const siteConfig: SiteConfig = {
   ogImage: "https://luassuasracing.com/og.jpg",
   links: {
     tiktok: "https://www.tiktok.com/@luas.Suas.racing",
-    instagram: "https://instagram.com/@luas.suas.racing",
+    instagram: "https://instagram.com/luas.suas.racing",
     gmail: "luassuasracing@gmail.com"
   },
 }
