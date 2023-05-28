@@ -82,7 +82,8 @@ export default function TeamPage() {
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
         At the outset of our F1 schools project, we formed a team based on our trust in each other’s abilities to dedicate the necessary effort and diligence to create a winning project.  We had faith in one another to grasp the requirements of our individual roles and to support each other in achieving success. As a cohesive unit, we relished collaborating on the project and had a lot of fun during the project. We had a lot of learning to do as there was no one in our school who had competed at the F1 in schools national final but we proved that persistence and effective communication were integral in accomplishing the milestones on our journey. From our countless amounts of shared docs, classroom meetings, instant messaging and group chats, we constantly keep each other updated on our progress. We continuously show determination and ambition in everything we do, working for our goals and accomplishing them together.
-
+        </p>
+        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
         Meet some of our team members below 👇
         </p>
       </div>
