@@ -26,7 +26,7 @@ const sponsors: Sponsor[] = [
   {
     tier: 'gold',
     name: 'Fran Grincell Properties',
-    image: '/images/Pauls_Kilkenny.png'
+    image: '/images/Fran_Grincell_Properties.png'
 
   },
   {
