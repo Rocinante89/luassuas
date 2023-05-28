@@ -3,13 +3,14 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+import Image from 'next/image'
 
 export default async function IndexPage() {
 
   return (
     <div className='flex flex-col gap-3'>
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-6 text-center">
           <Link
             href={siteConfig.links.tiktok}
             className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
@@ -17,6 +18,7 @@ export default async function IndexPage() {
           >
             Follow along on TikTok
           </Link>
+          <Image src='/images/logo.png' alt='Luas Suas Racing Logo' height={128} width={128}/>
           <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
             Luas Suas Racing
           </h1>
@@ -34,6 +36,7 @@ export default async function IndexPage() {
               Meet the Sponsors
             </Link>
           </div>
+          <Image src='/images/team.jpg' alt='Luas Suas Racing Logo' height={1280} width={1280}/>
         </div>
       </section>
       <section

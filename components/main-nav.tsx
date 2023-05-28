@@ -51,7 +51,7 @@ export function MainNav({ items, children }: MainNavProps) {
         className="flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
       >
-        {showMobileMenu ? <Icons.close /> : <Icons.logo />}
+        {showMobileMenu ? <Icons.close /> : <Image src='/images/logo.png' alt='Luas Suas Racing Logo' height={42} width={42}/>}
         <span className="font-bold">Menu</span>
       </button>
       {showMobileMenu && items && (
