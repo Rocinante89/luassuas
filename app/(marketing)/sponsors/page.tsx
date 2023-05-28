@@ -66,10 +66,12 @@ export default function SponsorsPage() {
         Sponsors play a vital role in the competition as all of the costs of building the car and our brand all add up to be quite expensive. We offer a high ROI (return on investment) to ensure our sponsors receive the best return for the money they invest. This includes promotion on our social media platforms, being displayed on our pit display at the national finals, being displayed on our car and much more.
         </p>
       </div>
-      <div className='flex justify-center gap-3'>
-        {sponsors.filter(sponsor => sponsor.tier === 'special').map(sponsor => <div className='flex items-center gap-2'>
+      <div className='flex flex-col justify-start gap-3 rounded-2xl bg-gradient-to-r from-gray-50 to-gray-300 p-8  shadow-md transition duration-300 delay-150 ease-in-out hover:-translate-y-1  hover:scale-110 hover:bg-gradient-to-l hover:shadow-xl'>
+        <div className='flex justify-center gap-1'>
+        {sponsors.filter(sponsor => sponsor.tier === 'special').map(sponsor => <div className='flex items-center justify-start gap-2'>
           <Image alt={sponsor.name} src={sponsor.image} height={248} width={248}/>
           </div>)}
+        </div>
       </div>
       <div className='flex flex-col justify-start gap-3 rounded-2xl bg-gradient-to-r from-yellow-600 to-yellow-300 p-8  shadow-md transition duration-300 delay-150 ease-in-out hover:-translate-y-1  hover:scale-110 hover:bg-gradient-to-l hover:shadow-xl'>
         <div className='flex justify-between gap-1'>

@@ -81,7 +81,9 @@ export default function TeamPage() {
           About Us
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-        Luas Suas team are….
+        At the outset of our F1 schools project, we formed a team based on our trust in each other’s abilities to dedicate the necessary effort and diligence to create a winning project.  We had faith in one another to grasp the requirements of our individual roles and to support each other in achieving success. As a cohesive unit, we relished collaborating on the project and had a lot of fun during the project. We had a lot of learning to do as there was no one in our school who had competed at the F1 in schools national final but we proved that persistence and effective communication were integral in accomplishing the milestones on our journey. From our countless amounts of shared docs, classroom meetings, instant messaging and group chats, we constantly keep each other updated on our progress. We continuously show determination and ambition in everything we do, working for our goals and accomplishing them together.
+
+        Meet some of our team members below 👇
         </p>
       </div>
       {/* <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:mx-0 lg:max-w-none lg:gap-x-8 lg:px-8 xl:col-span-2 xl:grid-cols-3"> */}
