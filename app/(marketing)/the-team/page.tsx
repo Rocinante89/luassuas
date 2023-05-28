@@ -65,7 +65,7 @@ const people: Person[] = [
     role: 'Graphic Designer',
     imageUrl:
       '/images/avatars/ena.jpg',
-      bio: '',
+      bio: 'Ena was in charge of researching the psychology behind different colours for our colour scheme. She designed our logo, team jerseys, the background for our portfolios and our pit display. Ena played a vital role in organising these aesthetically pleasing aspects of the project.',
       tikTokUrl: undefined,
     instagramUrl: undefined,
   },
