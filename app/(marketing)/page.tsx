@@ -36,12 +36,12 @@ export default async function IndexPage() {
               Meet the Sponsors
             </Link>
           </div>
-          <Image src='/images/team.jpg' alt='Luas Suas Racing Logo' height={1280} width={1280}/>
+          <Image src='/images/team.jpg' alt='Luas Suas Racing Logo' className='rounded-2xl' height={1280} width={1280}/>
         </div>
       </section>
       <section
         id="what-is-f1-in-schools"
-        className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
+        className="container space-y-6 rounded-2xl bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
@@ -52,7 +52,7 @@ export default async function IndexPage() {
           </p>
         </div>
       </section>
-      <section id="why-did-we-enter" className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">
+      <section id="why-did-we-enter" className="container space-y-6 rounded-2xl bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
             Why did we enter?

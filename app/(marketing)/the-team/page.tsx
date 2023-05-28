@@ -19,7 +19,7 @@ const people: Person[] = [
     name: 'Tiah O’ Neill',
     role: 'Team Manager',
     imageUrl:
-      '/images/avatars/tiah.png',
+      '/images/avatars/tiah.jpg',
     bio: 'Tiah assumes the vital role of overseeing the project and managing all the team operations. Her responsibilities include organising the team’s work tasks, Gantt charts and weekly meetings. She made sure we are ‘on track’ (no pun intended) and meeting all of our deadlines. Tiahs holds a motorsport licence and has followed F1 since she was ten.',
     tikTokUrl: undefined,
     instagramUrl: undefined,
@@ -28,7 +28,7 @@ const people: Person[] = [
     name: 'Emer Gladney',
     role: 'Finance Manager',
     imageUrl:
-      '/images/avatars/emer.png',
+      '/images/avatars/emer.jpg',
     bio: 'Emer holds the responsibility of meticulously tracking all team finances. She collaborates closely with our school finance department to oversee the sponsorship money received and team spending from our account. She deftly prepares the budget and closely monitors team expenditures. Additionally, Emer conducts thorough research to secure the best possible prices for all the resources we require.',
     tikTokUrl: undefined,
     instagramUrl: undefined,
@@ -37,8 +37,17 @@ const people: Person[] = [
     name: 'Nora McCarthy',
     role: 'Design Engineer',
     imageUrl:
-      '/images/avatars/nora.png',
+      '/images/avatars/nora.jpg',
     bio: 'Nora dedicated a significant portion of her time to researching the technical aspects of the model F1 car and rapidly familiarising herself with Solidworks. She effectively applied the knowledge she gained to the design of our car, taking care to ensure that it adhered to all regulations and was optimized for aerodynamic performance. Nora  is an accomplished basketball player and excelled at tech graphics in her junior certificate.',
+    tikTokUrl: undefined,
+    instagramUrl: undefined,
+  },
+  {
+    name: 'Laura Walshe',
+    role: 'Media & Marketing',
+    imageUrl:
+      '/images/avatars/laura.jpg',
+    bio: 'Laura assumes the role of managing all of our social media accounts and spearheading our marketing efforts. She ensures a steady stream of content is posted on our social media platforms and proactively reaches out to local influencers to collaborate with us and help expand our following. Laura is passionate about team spirit and teamwork from her experience playing camogie.',
     tikTokUrl: undefined,
     instagramUrl: undefined,
   },
@@ -46,9 +55,18 @@ const people: Person[] = [
     name: 'Aine White',
     role: 'Manufacturing Engineer',
     imageUrl:
-      '/images/avatars/aine.png',
+      '/images/avatars/aine.jpg',
     bio: `Aine's role involved conducting extensive research and closely monitoring the manufacturing process once the car design was finalised. She was also responsible for completing the final stages of the model car's construction. Her role demanded close collaboration with our design engineer, Nora, to ensure that the construction process was executed seamlessly. Aines interest in motorsport grew from her family who host a rally every year.`,
     tikTokUrl: undefined,
+    instagramUrl: undefined,
+  },
+  {
+    name: 'Ena Lawlor',
+    role: 'Graphic Designer',
+    imageUrl:
+      '/images/avatars/ena.jpg',
+      bio: '',
+      tikTokUrl: undefined,
     instagramUrl: undefined,
   },
   // More people...
@@ -66,14 +84,14 @@ export default function TeamPage() {
         Luas Suas team are….
         </p>
       </div>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+      {/* <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:mx-0 lg:max-w-none lg:gap-x-8 lg:px-8 xl:col-span-2 xl:grid-cols-3"> */}
         <ul
           role="list"
-          className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2"
+          className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 xl:col-span-2"
         >
           {people.map((person) => (
             <li key={person.name}>
-              <Image width={300} height={500} className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imageUrl} alt="" />
+              <Image width={300} height={500} className="aspect-square w-full rounded-2xl object-top" src={person.imageUrl} alt="" />
               <h3 className="mt-6 font-heading text-lg font-semibold leading-8">{person.name}</h3>
               <p className="text-base leading-7 text-muted-foreground">{person.role}</p>
               <p className="mt-4 text-base leading-7 text-muted-foreground">{person.bio}</p>
@@ -106,7 +124,7 @@ export default function TeamPage() {
             </li>
           ))}
         </ul>
-      </div>
+      {/* </div> */}
     </section>
   )
 }
